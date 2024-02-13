@@ -1,0 +1,227 @@
+.back {
+  background-image: url("ba.png");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0%;
+}
+.logo {
+  margin-left: 1%;
+  margin-top: 0.5%;
+}
+.nav {
+  background-color: rgba(0, 0, 0, 1);
+  height: 6em;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-radius: 0%;
+}
+.heading {
+  color: white;
+  align-self: center;
+  font-size: larger;
+  width: 30%;
+  margin-right: 20%;
+  margin-left: 30%;
+  margin-bottom: 1%;
+  font-family: customfont;
+  font-size: 50px;
+  margin-top: 1%;
+}
+@font-face {
+  font-family: customfont;
+  src: url("monaco.woff");
+}
+a {
+  text-decoration: none;
+  color: black;
+  align-self: center;
+}
+.text {
+  display: flex;
+  flex-direction: row;
+}
+
+.cta {
+  border: none;
+  background: none;
+  margin-top: 7%;
+}
+
+.cta span {
+  padding-bottom: 4px;
+  letter-spacing: 4px;
+  font-size: 14px;
+  padding-right: 15px;
+  text-transform: uppercase;
+  font-family: customfont;
+  font-size: 30px;
+  margin-top: 1%;
+}
+
+.cta svg {
+  transform: translateX(-8px);
+  transition: all 0.3s ease;
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+}
+
+.cta:active svg {
+  transform: scale(0.9);
+}
+
+.hover-underline-animation {
+  position: relative;
+  color: white;
+  padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.cta:hover .hover-underline-animation:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+footer {
+  background-color: black;
+  color: white;
+  padding: 0.8em;
+  font-size: 0.7em;
+  text-align: center;
+  width: 100%;
+  height: 1em;
+  position: fixed;
+  font-family: customfont;
+  font-size: 20px;
+  bottom: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.input-window,
+.output-window {
+  flex: 1;
+  height: 100%;
+ 
+  overflow-y: auto;
+  resize: horizontal;
+}
+
+.input-window {
+  margin-left: 10%;
+  padding: 10px;
+  margin-right: 2%;
+}
+
+.output-window {
+  background-color: #000000;
+  padding: 10px;
+  margin-right: 7%;
+  height: 68.3%;
+  margin-top: 0.7%;
+  border: 1px solid black;
+  color: aliceblue;
+}
+
+textarea {
+  width: 95%;
+  height: 70%;
+}
+.box {
+  position: relative;
+  display: flex;
+  padding: 10px;
+  height: 68.3%;
+  border-radius: 15px;
+  margin-left: 32px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 500px;
+  height: 500px;
+  background-color: black;
+  opacity: 1;
+}
+
+.wrapper {
+  position: absolute;
+
+  bottom: 10px;
+  right: 50px;
+}
+
+textarea::placeholder {
+  color: grey;
+  font-size: 90%;
+  opacity: 0.8;
+}
+
+.chat {
+  width: 70%;
+  height: 70%;
+  border-radius: 15px;
+  position: absolute;
+  margin-left: 110px;
+  margin-top: 0px;
+  background-color: whitesmoke;
+  color: #000000;
+  justify-content: center;
+  display: block;
+}
+
+.bot {
+  position: absolute;
+
+  width: 71.99px;
+  height: 90px;
+  display: inline-block;
+  border: 1px solid white;
+  padding: 1rem 1rem;
+  vertical-align: middle;
+}
+.bottom {
+  display: flex;
+  flex-direction: column;
+  margin-top: 70%;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin-left: 15%;
+}
+.gen_sub {
+  margin-top: 0%;
+}
+
+.lang {
+  max-height: 40px;
+  width: 350px;
+  border-radius: 15px;
+  margin-top: 5%;
+  margin-left: 0%;
+}

@@ -1,0 +1,250 @@
+.back {
+  background-image: url("ba.png");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0%;
+}
+.logo {
+  margin-left: 1%;
+  margin-top: 0.5%;
+}
+.nav {
+  background-color: rgba(0, 0, 0, 1);
+  height: 6em;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-radius: 0%;
+}
+.heading {
+  color: white;
+  align-self: center;
+  font-size: larger;
+  width: 30%;
+  margin-right: 20%;
+  margin-left: 30%;
+  margin-bottom: 1%;
+  font-family: customfont;
+  font-size: 50px;
+  margin-top: 1%;
+}
+@font-face {
+  font-family: customfont;
+  src: url("monaco.woff");
+}
+a {
+  text-decoration: none;
+  color: black;
+  align-self: center;
+}
+.text {
+  display: flex;
+  flex-direction: row;
+}
+
+.cta {
+  border: none;
+  background: none;
+  margin-top: 7%;
+}
+
+.cta span {
+  padding-bottom: 4px;
+  letter-spacing: 4px;
+  font-size: 14px;
+  padding-right: 15px;
+  text-transform: uppercase;
+  font-family: customfont;
+  font-size: 30px;
+  margin-top: 1%;
+}
+
+.cta svg {
+  transform: translateX(-8px);
+  transition: all 0.3s ease;
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+}
+
+.cta:active svg {
+  transform: scale(0.9);
+}
+
+.hover-underline-animation {
+  position: relative;
+  color: white;
+  padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.cta:hover .hover-underline-animation:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+footer {
+  background-color: black;
+  color: white;
+  padding: 0.8em;
+  font-size: 0.7em;
+  text-align: center;
+  width: 100%;
+  height: 1em;
+  position: fixed;
+  font-family: customfont;
+  font-size: 20px;
+  bottom: 0;
+}
+.box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  height: 450px;
+  overflow: auto;
+  border-radius: 15px;
+  margin-left: 32px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: max-content;
+  background-color: black;
+  opacity: 1;
+  overflow: auto;
+}
+
+.wrapper {
+  position: absolute;
+
+  bottom: 10px;
+  right: 50px;
+}
+
+textarea::placeholder {
+  color: grey;
+  font-size: 90%;
+  opacity: 0.8;
+}
+
+.chat {
+  width: 240px;
+  height: 70px;
+  overflow: auto;
+  border-radius: 4px;
+  margin-left: 40px;
+  background-color: whitesmoke;
+}
+.chat1 {
+  width: 240px;
+  height: 70px;
+  overflow: auto;
+  border-radius: 4px;
+  margin-left: 40px;
+  background-color: whitesmoke;
+}
+
+.chat2 {
+  width: 240px;
+  height: 70px;
+  overflow: auto;
+  border-radius: 4px;
+  margin-left: 40px;
+  margin-top: 10px;
+  background-color: whitesmoke;
+}
+
+.send-btn {
+  border: none;
+  cursor: pointer;
+  height: 34px;
+  bottom: 5px;
+  position: absolute;
+  min-width: 30px;
+  margin-left: 2% ;
+}
+
+
+
+.send-btn > img {
+  width: 2em;
+  bottom: 5px;
+
+}
+.bot {
+  /* position: absolute;*/
+
+  width: 71.99px;
+  height: 90px;
+  border: 1px solid white;
+  padding: 1rem 1rem;
+}
+
+.chatconvo {
+  display: flex;
+  flex-direction: row;
+}
+.chatconvo1 {
+  display: flex;
+  flex-direction: row;
+  display: none;
+}
+.chatconvo2 {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5%;
+  display: none;
+}
+textarea {
+  max-width: max-content;
+  max-height: max-content;
+  border-radius: 15px;
+}
+
+.bot1 {
+  /* display: block;
+  position: relative;*/
+  width: 71.99px;
+  height: 90px;
+  margin-top: 5%;
+  /*  display: inline-block;*/
+  border: 1px solid white;
+  padding: 1rem 1rem;
+}
+
+.whatsapp {
+  display: none;
+  width: 240px;
+  height: 40px;
+  overflow: auto;
+  border-radius: 4px;
+  margin-left: 150px;
+  margin-top: 10px;
+  background-color: rgb(72, 70, 70);
+  color: white;
+}
+.testing{
+ border: none;
+  cursor: pointer;
+  height: 34px;
+  bottom: 5px;
+  min-width: 30px;
+  margin-left: 2% ;
+}
+.testing > img {
+  width: 3.3em;
+
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <script type="module" src="env.js"></script>
+	<script type="module" src="page2.js"></script>
+  <head>
+    <link rel="stylesheet" href="page2.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coding for dummies</title>
+  </head>
+  <body class="back">
+    <div class="nav">
+      <div class="logo">
+        <img src="logo.png" height="80px" width="100px" />
+      </div>
+      <div class="heading">CODING FOR DUMMIES</div>
+      <div class="text">
+        <button class="cta">
+          <a href="page1.html">
+            <span class="hover-underline-animation"> HOME</span>
+            <svg
+              viewBox="0 0 46 16"
+              height="10"
+              width="30"
+              xmlns="http://www.w3.org/2000/svg"
+              id="arrow-horizontal"
+            >
+              <path
+                transform="translate(30)"
+                d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                data-name="Path 10"
+                id="Path_10"
+              ></path>
+            </svg>
+          </a>
+        </button>
+        <button class="cta">
+          <a href="page2.html">
+            <span class="hover-underline-animation"> TEST</span>
+            <svg
+              viewBox="0 0 46 16"
+              height="10"
+              width="30"
+              xmlns="http://www.w3.org/2000/svg"
+              id="arrow-horizontal"
+            >
+              <path
+                transform="translate(30)"
+                d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                data-name="Path 10"
+                id="Path_10"
+              ></path>
+            </svg>
+          </a>
+        </button>
+      </div>
+    </div>
+    <div class="container">
+      <div class="input-window" id="inputWindow">
+        <textarea
+          id="inputTextArea"
+          placeholder="Enter your code here..."
+        ></textarea>
+      </div>
+      <div class="output-window" id="outputWindow">
+        <div id="outputText">
+          <div class="box">
+            <div class="bot"><img src="bot1.png" /></div>
+            <div class="chat">
+              <p id="convo">This is where you can get recommendation of projects you can work on</p>
+              <p id="convoChat">Please enter the code of the project on the LHS</p>
+            </div>
+            <div class="bottom">
+              <textarea
+                class="lang"
+                cols="40"
+                rows="2"
+                placeholder="I wanna learn python"
+                id = "programTextArea"
+              ></textarea>
+              <div class="gen_sub">
+                <button class="cta" id = "gen-btn">
+                    <span class="hover-underline-animation"> GENERATE</span>
+                    <svg
+                      viewBox="0 0 46 16"
+                      height="10"
+                      width="30"
+                      xmlns="http://www.w3.org/2000/svg"
+                      id="arrow-horizontal"
+                    >
+                      <path
+                        transform="translate(30)"
+                        d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                        data-name="Path 10"
+                        id="Path_10"
+                      ></path>
+                    </svg>
+                </button>
+                <button class="cta" id = "sub-btn">
+                    <span class="hover-underline-animation">SUBMIT</span>
+                    <svg
+                      viewBox="0 0 46 16"
+                      height="10"
+                      width="30"
+                      xmlns="http://www.w3.org/2000/svg"
+                      id="arrow-horizontal"
+                    >
+                      <path
+                        transform="translate(30)"
+                        d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                        data-name="Path 10"
+                        id="Path_10"
+                      ></path>
+                    </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      &copy;2023.Code for Dummies.All.Rights.Reserved
+    </footer>
+  </body>
+</html>
